@@ -23,8 +23,8 @@
   position: absolute;
   top: -18px;
   left: 23px;
-  font-weight: 400;
   font-size: 12px;
+  font-weight: 400;
   line-height: 16px;
 }
 
@@ -34,24 +34,24 @@
 
 .contacts__form {
   position: relative;
+  top: -4px;
   display: flex;
   align-items: center;
-  top: -4px;
 }
 
 .contacts__place-name {
-  margin: 0px;
+  margin: 0;
   margin-top: 7px;
 }
 
 .contacts__place-name-custom {
-  font-weight: 600;
   font-size: 24px;
+  font-weight: 600;
   line-height: 32px;
 }
 
 .contacts__place-address {
-  margin: 0px;
+  margin: 0;
 }
 
 .contacts__place-address-custom {
@@ -61,25 +61,25 @@
 
 .contacts__label {
   position: relative;
-  margin-right: 20px;
-  max-width: 270px;
-  min-width: 220px;
   width: 100%;
+  min-width: 220px;
+  max-width: 270px;
+  margin-right: 20px;
 }
 
 .contacts__label-input {
-  padding: 17px 60px 15px 23px;
   width: 100%;
-  max-width: 270px;
   min-width: 220px;
+  max-width: 270px;
   height: 50px;
-  color: var(--font-black);
+  padding: 17px 60px 15px 23px;
   border: 1px solid var(--font-black);
   border-radius: 100px;
-  font-weight: 400;
   font-size: 16px;
+  font-weight: 400;
   line-height: 32px;
-  transition: background-color 0.3s ease-in-out;
+  color: var(--font-black);
+  transition: background-color .3s ease-in-out;
 }
 
 .contacts__label-input::-webkit-input-placeholder {
@@ -91,54 +91,54 @@
 }
 
 .contacts__label-input:focus-visible {
-  background-color: var(--paggination-disable);
   outline: none;
+  background-color: var(--paggination-disable);
 }
 
 .contacts__button-custom {
-  padding: 11px 34px 11px 33px;
   width: 100%;
   max-width: 329px;
   height: 50px;
+  padding: 11px 34px 11px 33px;
   border: 2px solid var(--dark-violet);
   border-radius: 100px;
-  font-weight: 700;
   font-size: 18px;
+  font-weight: 700;
   line-height: 25px;
   color: var(--dark-violet);
-  transition: background-color 0.3s ease-in-out;
+  transition: background-color .3s ease-in-out;
 }
 
 .contacts__button-custom:hover {
-  background-color: var(--dark-violet);
   color: var(--header-white);
+  background-color: var(--dark-violet);
 }
 
 .contacts__button-custom:focus-visible {
-  background-color: var(--dark-violet);
   color: var(--header-white);
   outline: none;
+  background-color: var(--dark-violet);
 }
 
 .contacts__button-custom:active {
-  background-color: var(--burger-violet-active);
   color: var(--header-white);
+  background-color: var(--burger-violet-active);
 }
 
 .contacts__social-title {
-  margin: 0px;
+  margin: 0;
   margin-bottom: 5px;
 }
 
 .contacts__social-title-custom {
-  font-weight: 600;
   font-size: 24px;
+  font-weight: 600;
   line-height: 32px;
 }
 
 .conctacts__item {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 .contacts__item-list {
@@ -150,7 +150,7 @@
 }
 
 .contacts__item-list-link:hover svg {
-  opacity: 0.5;
+  opacity: .5;
 }
 
 .contacts__item-list-link:focus-visible {
@@ -158,16 +158,16 @@
 }
 
 .contacts__item-list-link:focus-visible svg {
-  opacity: 0.5;
+  opacity: .5;
 }
 
 .contacts__item-list-link::after {
   content: "";
   position: absolute;
-  border: 1px solid var(--dark-violet);
-  border-radius: 20px;
   width: 40px;
   height: 40px;
+  border: 1px solid var(--dark-violet);
+  border-radius: 20px;
 }
 
 .contacts__item-list-link::after {
@@ -175,8 +175,8 @@
 }
 
 .contacts__item-list-link:active::after {
-  display: block;
   top: 0;
+  display: block;
   opacity: 1;
 }
 
@@ -184,8 +184,8 @@
 .contacts__map {
   position: relative;
   min-height: 700px;
-  transition-property: width, height, padding;
   transition-duration: 100ms;
+  transition-property: width, height, padding;
 }
 
 .contacts__map-wrap {
@@ -216,7 +216,7 @@
     flex-direction: column;
   }
 
-  .contacts__place-address-custom{
+  .contacts__place-address-custom {
     font-size: 14px;
     line-height: 32px;
   }
@@ -227,7 +227,7 @@
 
   .contacts__form {
     justify-content: space-between;
-    margin-right: 0px;
+    margin-right: 0;
     margin-bottom: 35px;
   }
 
@@ -256,7 +256,7 @@
   }
 
   .contacts__place-name {
-    margin-top: 0px;
+    margin-top: 0;
   }
 
   .contacts__place-name-custom {
@@ -268,8 +268,8 @@
   }
 
   .contacts__label {
-    max-width: 270px;
     width: 100%;
+    max-width: 270px;
   }
 
   .contacts__label-input {
@@ -278,8 +278,8 @@
 
   .contacts__button-custom {
     max-width: 343px;
-    font-weight: 700;
     font-size: 18px;
+    font-weight: 700;
     line-height: 25px;
   }
 
@@ -304,14 +304,14 @@
 
     .contacts__form {
       display: flex;
-      flex-wrap: wrap;
       align-items: baseline;
+      flex-wrap: wrap;
     }
 
     .contacts__label {
-      margin-right: 0px;
-      margin-bottom: 12px;
       max-width: 323px;
+      margin-right: 0;
+      margin-bottom: 12px;
     }
 
     .contacts__label-input {
@@ -341,7 +341,7 @@
   @media (max-width: 320px) {
     .contacts-top {
       padding-top: 30px;
-      padding-bottom: 0px;
+      padding-bottom: 0;
       border-top: none;
       border-bottom: none;
     }
@@ -366,12 +366,12 @@
     }
 
     .contacts__label-input::-webkit-input-placeholder {
-      font-weight: 400;
       font-size: 16px;
+      font-weight: 400;
       line-height: 32px;
     }
 
-    .contacts__place  {
+    .contacts__place {
       margin-bottom: 23px;
     }
 
@@ -380,9 +380,9 @@
     }
 
     .contacts__label-input {
+      height: 40px;
       font-size: 16px;
       line-height: 32px;
-      height: 40px;
     }
 
     .contacts__social-title {

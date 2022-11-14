@@ -1,58 +1,61 @@
 [data-simplebar] {
   position: relative;
+  align-content: flex-start;
+  align-items: flex-start;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: flex-start;
-  align-content: flex-start;
-  align-items: flex-start;
 }
 
 .simplebar-wrapper {
   overflow: hidden;
   width: inherit;
-  height: inherit;
   max-width: inherit;
+  height: inherit;
   max-height: inherit;
 }
 
 .simplebar-mask {
-  direction: inherit;
   position: absolute;
-  overflow: hidden;
-  padding: 0;
-  margin: 0;
-  left: 0;
+  z-index: 0;
   top: 0;
-  bottom: 0;
   right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
   width: auto !important;
   height: auto !important;
-  z-index: 0;
+  margin: 0;
+  padding: 0;
+
+  direction: inherit;
 }
 
 .simplebar-offset {
-  direction: inherit !important;
-  box-sizing: inherit !important;
-  resize: none !important;
   position: absolute;
   top: 0;
-  left: 0;
-  bottom: 0;
   right: 0;
-  padding: 0;
+  bottom: 0;
+  left: 0;
+  box-sizing: inherit !important;
   margin: 0;
+  padding: 0;
+  resize: none !important;
+
+  direction: inherit !important;
   -webkit-overflow-scrolling: touch;
 }
 
 .simplebar-content-wrapper {
-  direction: inherit;
-  box-sizing: border-box !important;
   position: relative;
   display: block;
-  height: 100%; /* Required for horizontal native scrollbar to not appear if parent is taller than natural height */
+  box-sizing: border-box !important;
   width: auto;
   max-width: 100%; /* Not required for horizontal scroll to trigger */
+  height: 100%; /* Required for horizontal native scrollbar to not appear if parent is taller than natural height */
   max-height: 100%; /* Needed for vertical scroll to trigger */
+
+  direction: inherit;
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
@@ -65,64 +68,64 @@
 
 .simplebar-content:before,
 .simplebar-content:after {
-  content: ' ';
+  content: " ";
   display: table;
 }
 
 .simplebar-placeholder {
-  max-height: 100%;
-  max-width: 100%;
   width: 100%;
+  max-width: 100%;
+  max-height: 100%;
   pointer-events: none;
 }
 
 .simplebar-height-auto-observer-wrapper {
-  box-sizing: inherit !important;
-  height: 100%;
-  width: 100%;
-  max-width: 1px;
   position: relative;
-  float: left;
-  max-height: 1px;
-  overflow: hidden;
   z-index: -1;
-  padding: 0;
-  margin: 0;
-  pointer-events: none;
+  float: left;
+  overflow: hidden;
+  flex-basis: 0;
   flex-grow: inherit;
   flex-shrink: 0;
-  flex-basis: 0;
+  box-sizing: inherit !important;
+  width: 100%;
+  max-width: 1px;
+  height: 100%;
+  max-height: 1px;
+  margin: 0;
+  padding: 0;
+  pointer-events: none;
 }
 
 .simplebar-height-auto-observer {
-  box-sizing: inherit;
-  display: block;
-  opacity: 0;
   position: absolute;
+  z-index: -1;
   top: 0;
   left: 0;
-  height: 1000%;
-  width: 1000%;
-  min-height: 1px;
-  min-width: 1px;
+  display: block;
   overflow: hidden;
+  box-sizing: inherit;
+  width: 1000%;
+  min-width: 1px;
+  height: 1000%;
+  min-height: 1px;
+  opacity: 0;
   pointer-events: none;
-  z-index: -1;
 }
 
 .simplebar-track {
-  z-index: 1;
   position: absolute;
+  z-index: 1;
   right: 0;
   bottom: 0;
-  pointer-events: none;
   overflow: hidden;
+  pointer-events: none;
 }
 
 [data-simplebar].simplebar-dragging .simplebar-content {
-  pointer-events: none;
-  user-select: none;
   -webkit-user-select: none;
+          user-select: none;
+  pointer-events: none;
 }
 
 [data-simplebar].simplebar-dragging .simplebar-track {
@@ -131,25 +134,25 @@
 
 .simplebar-scrollbar {
   position: absolute;
-  left: 0;
   right: 0;
+  left: 0;
   min-height: 10px;
 }
 
 .simplebar-scrollbar:before {
+  content: "";
   position: absolute;
-  content: '';
-  background: black;
-  border-radius: 7px;
-  left: 2px;
   right: 2px;
+  left: 2px;
+  border-radius: 7px;
   opacity: 0;
-  transition: opacity 0.2s linear;
+  background: black;
+  transition: opacity .2s linear;
 }
 
 .simplebar-scrollbar.simplebar-visible:before {
   /* When hovered, remove all transitions from drag handle */
-  opacity: 0.5;
+  opacity: .5;
   transition: opacity 0s linear;
 }
 
@@ -169,36 +172,37 @@
 }
 
 .simplebar-track.simplebar-horizontal .simplebar-scrollbar:before {
-  height: 100%;
-  left: 2px;
   right: 2px;
+  left: 2px;
+  height: 100%;
 }
 
 .simplebar-track.simplebar-horizontal .simplebar-scrollbar {
+  top: 2px;
   right: auto;
   left: 0;
-  top: 2px;
+  width: auto;
+  min-width: 10px;
   height: 7px;
   min-height: 0;
-  min-width: 10px;
-  width: auto;
 }
 
 /* Rtl support */
-[data-simplebar-direction='rtl'] .simplebar-track.simplebar-vertical {
+[data-simplebar-direction="rtl"] .simplebar-track.simplebar-vertical {
   right: auto;
   left: 0;
 }
 
 .hs-dummy-scrollbar-size {
-  direction: rtl;
   position: fixed;
-  opacity: 0;
   visibility: hidden;
-  height: 500px;
-  width: 500px;
-  overflow-y: hidden;
   overflow-x: scroll;
+  overflow-y: hidden;
+  width: 500px;
+  height: 500px;
+  opacity: 0;
+
+  direction: rtl;
 }
 
 .simplebar-hide-scrollbar {
@@ -206,6 +210,7 @@
   left: 0;
   visibility: hidden;
   overflow-y: scroll;
+
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
