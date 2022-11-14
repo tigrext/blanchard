@@ -12,21 +12,17 @@ burger.addEventListener("click", function () {
   burgerInMenu.classList.toggle("is--active");
 
   document.body.classList.toggle("stop-scroll");
-
-  burgerInMenu.classList.toggle("header-nav--visible");
 });
 
 menuLinks.forEach(function (el) {
   el.addEventListener("click", function () {
-    burger.classList.remove("header-nav--visible");
+    menu.classList.remove("header-nav--visible");
 
-    menu.classList.remove("is--active");
+    burger.classList.remove("is--active");
 
     burgerInMenu.classList.remove("is--active");
 
     document.body.classList.remove("stop-scroll");
-
-    burgerInMenu.classList.remove("header-nav--visible");
   });
 });
 
@@ -38,8 +34,6 @@ burgerInMenu.addEventListener("click", function () {
   burgerInMenu.classList.remove("is--active");
 
   document.body.classList.remove("stop-scroll");
-
-  burgerInMenu.classList.remove("header-nav--visible");
 });
 
 // Поиск
@@ -60,7 +54,7 @@ search_close.addEventListener("click", function (e) {
 });
 
 
-// Выпадающий список хеэдера
+// Выпадающий список хедера
 const params = {
   btnClassName: "js-header-dropdown-btn",
   dropClassName: "js-header-drop",
@@ -435,7 +429,7 @@ document.addEventListener("DOMContentLoaded", () => {
 (() => {
   tippy('.js-tooltip-btn', {
     theme: 'notification',
-    maxWidth: 165,
+    // maxWidth: 165,
     trigger: 'click'
   });
 })();
@@ -623,9 +617,6 @@ validation
   }
 ]);
 
-
-
-
 // Карта
 ymaps.ready(init);
 function init() {
@@ -664,6 +655,23 @@ function init() {
   myMap.geoObjects.add(myPlacemark);
   myMap.container.fitToViewport();
 };
+
+// Плавный Скролл ПК
+
+document.querySelectorAll('.js-scroll-link-pc').forEach(link => {
+  link.addEventListener('click', function(e) {
+      e.preventDefault();
+
+      const href = this.getAttribute('href').substring(1);
+      const scrollTarget = document.getElementById(href);
+      const elementPosition = scrollTarget.getBoundingClientRect().top;
+
+      window.scrollBy({
+          top: elementPosition,
+          behavior: 'smooth'
+      });
+  });
+});
 
 // Плавный Скролл только на мобильном
 (() => {
