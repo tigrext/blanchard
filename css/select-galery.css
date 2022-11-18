@@ -83,7 +83,7 @@
   transition: background-color .3s ease-in-out;
 }
 
-.default-select__inner:hover {
+.default-select__inner:hover:not(:active) {
   background-color: rgba(255, 255, 255, .2);
 }
 
@@ -214,7 +214,13 @@
   outline: 0;
 }
 
-.default-select__list--dropdown .default-select__placeholder {
+/* если хотим, чтобы placeholder исчезал после выбора другого значения*/
+/* .default-select__list--dropdown .default-select__placeholder {
+  display: none;
+} */
+
+/* если хотим, чтобы placeholder появлялся после выбора другого значения */
+.is-selected  {
   display: none;
 }
 

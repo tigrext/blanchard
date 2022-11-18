@@ -14,9 +14,9 @@
   outline-offset: 7px;
 }
 
-.hamburger:hover .hamburger-inner,
-.hamburger:hover .hamburger-inner::before,
-.hamburger:hover .hamburger-inner::after {
+.hamburger:hover:not(:active) .hamburger-inner,
+.hamburger:hover:not(:active) .hamburger-inner::before,
+.hamburger:hover:not(:active) .hamburger-inner::after {
   background-color: var(--burger-violet);
 }
 
@@ -26,9 +26,9 @@
   background-color: var(--burger-violet-active);
 }
 
-.hamburger.is--active:hover .hamburger-inner,
-.hamburger.is--active:hover .hamburger-inner::before,
-.hamburger.is--active:hover .hamburger-inner::after {
+.hamburger.is--active:hover:not(:active) .hamburger-inner,
+.hamburger.is--active:hover:not(:active) .hamburger-inner::before,
+.hamburger.is--active:hover:not(:active) .hamburger-inner::after {
   background-color: var(--burger-violet);
 }
 

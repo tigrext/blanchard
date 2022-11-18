@@ -24,8 +24,8 @@
   margin-right: 20px;
 }
 
-.footer__social-list:hover .footer__social-vk path,
-.footer__social-list:hover .footer__social-odnoklasniki path {
+.footer__social-list:hover:not(:active) .footer__social-vk path,
+.footer__social-list:hover:not(:active) .footer__social-odnoklasniki path {
   transition: .3s ease-in-out;
 
   fill: var(--header-white);

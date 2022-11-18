@@ -104,7 +104,7 @@
   transform: translate(-50%, -50%);
 }
 
-.check-label:hover .visible-checkbox {
+.check-label:hover:not(:active) .visible-checkbox {
   border-color: var(--burger-violet);
 }
 
@@ -162,7 +162,7 @@
   cursor: pointer;
 }
 
-.nav-btn:hover {
+.nav-btn:hover:not(:active) {
   background-color: var(--dark-violet);
   transition: background-color .3s ease-in-out;
 }
@@ -192,6 +192,10 @@
   outline: none;
   background-color: var(--paggination-disable);
   cursor: auto;
+}
+
+.nav-btn.swiper-button-disabled:hover:not(:active) {
+  background-color: var(--paggination-disable);
 }
 
 .btn-prev {
@@ -257,7 +261,7 @@
   transition: opacity .5s ease;
 }
 
-.slide-custom:hover::after {
+.slide-custom:hover:not(:active)::after {
   opacity: 1;
 }
 
@@ -285,6 +289,12 @@
 }
 
 /* Адаптивная высота слайда регулируется относительно его ширины с помощью padding-top в % для псевдоэлемента ::before */
+
+@media (min-width: 1921px) {
+  .slide-custom::after {
+    background-position: center
+  }
+}
 
 @media (max-width: 1890px) {
   .slide-custom::after {

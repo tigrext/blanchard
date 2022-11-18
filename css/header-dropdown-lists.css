@@ -6,35 +6,35 @@
   background-color: rgba(0, 0, 0, .5);
 }
 
-.main__list {
+.header-container-down__list {
   display: flex;
   align-items: center;
   width: 75%;
 }
 
-.main__item {
+.header-container-down__item {
   position: relative;
   padding-bottom: 25px;
   color: var(--header-white);
 }
 
-.main__item-1 {
+.header-container-down__item-1 {
   margin-right: 8.3%;
 }
 
-.main__item-2 {
+.header-container-down__item-2 {
   margin-right: 8.3%;
 }
 
-.main__item-3 {
+.header-container-down__item-3 {
   margin-right: 8.5%;
 }
 
-.main__item-4 {
+.header-container-down__item-4 {
   margin-right: 8.5%;
 }
 
-.main__item-btn {
+.header-container-down__item-btn {
   display: flex;
   align-items: center;
   height: 100%;
@@ -51,12 +51,12 @@
   transition: color .2s ease-in-out;
 }
 
-.main__item-btn:hover,
-.main__item-btn:focus {
+.header-container-down__item-btn:hover:not(:active),
+.header-container-down__item-btn:focus {
   color: var(--burger-violet);
 }
 
-.main__item-btn::after {
+.header-container-down__item-btn::after {
   content: "";
   display: inline-block;
   width: 7px;
@@ -70,19 +70,19 @@
   transform-origin: center;
 }
 
-.main__item-btn.is-active {
+.header-container-down__item-btn.is-active {
   color: red;
 }
 
-.main__item-btn.is-active::after {
+.header-container-down__item-btn.is-active::after {
   transform: rotate(-45deg) translateY(4px);
 }
 
-.main__item-btn:active {
+.header-container-down__item-btn:active {
   color: var(--burger-violet-active);
 }
 
-.main__dropdown {
+.header-container-down__dropdown {
   position: absolute;
   z-index: 2;
   bottom: 0;
@@ -93,37 +93,37 @@
   transform: translateY(100%);
 }
 
-.main__dropdown-wrap {
+.header-container-down__dropdown-wrap {
   width: 240px;
   max-height: 220px;
 }
 
-.main__dropdown.is-active {
+.header-container-down__dropdown.is-active {
   display: block;
   animation-name: dropdownOpen;
   animation-duration: .4s;
 }
 
-.main__dropdown.is-disabled {
+.header-container-down__dropdown.is-disabled {
   display: block;
   animation-name: dropdownClose;
   animation-duration: .4s;
 }
 
-.main__drop-list {
+.header-container-down__drop-list {
   padding-left: 0;
   list-style: none;
 }
 
-.main__dropdown-item {
+.header-container-down__dropdown-item {
   width: 220px;
 }
 
-.main__dropdown-item:not(:last-child) {
+.header-container-down__dropdown-item:not(:last-child) {
   margin-bottom: 20px;
 }
 
-.main__item-link {
+.header-container-down__item-link {
   position: relative;
   display: block;
   height: 40px;
@@ -136,7 +136,7 @@
   transition: border-color .3s ease;
 }
 
-.main__item-link::before {
+.header-container-down__item-link::before {
   content: "";
   position: absolute;
   top: 0;
@@ -148,106 +148,106 @@
   transition: opacity .3s ease;
 }
 
-.main__item-link--tintoretto {
+.header-container-down__item-link--tintoretto {
   background-image: url("../img/dropdown-lists/tintoretto.jpg");
 }
 
-.main__item-link--fridrih {
+.header-container-down__item-link--fridrih {
   background-image: url("../img/dropdown-lists/fridrih.jpg");
 }
 
-.main__item-link--leonardo {
+.header-container-down__item-link--leonardo {
   background-image: url("../img/dropdown-lists/leonardo.jpg");
 }
 
-.main__item-link--verrocko {
+.header-container-down__item-link--verrocko {
   background-image: url("../img/dropdown-lists/verrocko.jpg");
 }
 
-.main__item-link--mone {
+.header-container-down__item-link--mone {
   background-image: url("../img/dropdown-lists/mone.jpg");
 }
 
-.main__item-link--sisley {
+.header-container-down__item-link--sisley {
   background-image: url("../img/dropdown-lists/sisley.jpg");
 }
 
-.main__item-link--mane {
+.header-container-down__item-link--mane {
   background-image: url("../img/dropdown-lists/mane.jpg");
 }
 
-.main__item-link--renuar {
+.header-container-down__item-link--renuar {
   background-image: url("../img/dropdown-lists/renuar.jpg");
 }
 
-.main__item-link--vangog {
+.header-container-down__item-link--vangog {
   background-image: url("../img/dropdown-lists/vangog.jpg");
 }
 
-.main__item-link--sezann {
+.header-container-down__item-link--sezann {
   background-image: url("../img/dropdown-lists/sezann.jpg");
 }
 
-.main__item-link--gogen {
+.header-container-down__item-link--gogen {
   background-image: url("../img/dropdown-lists/gogen.jpg");
 }
 
-.main__item-link--sera {
+.header-container-down__item-link--sera {
   background-image: url("../img/dropdown-lists/sera.jpg");
 }
 
-.main__item-link--kandinskiy {
+.header-container-down__item-link--kandinskiy {
   background-image: url("../img/dropdown-lists/kandinskiy.jpg");
 }
 
-.main__item-link--marinetti {
+.header-container-down__item-link--marinetti {
   background-image: url("../img/dropdown-lists/marinetti.jpg");
 }
 
-.main__item-link--malevich {
+.header-container-down__item-link--malevich {
   background-image: url("../img/dropdown-lists/malevich.jpg");
 }
 
-.main__item-link--picasso {
+.header-container-down__item-link--picasso {
   background-image: url("../img/dropdown-lists/picasso.jpg");
 }
 
-.main__item-link--karra {
+.header-container-down__item-link--karra {
   background-image: url("../img/dropdown-lists/karra.jpg");
 }
 
-.main__item-link--pratella {
+.header-container-down__item-link--pratella {
   background-image: url("../img/dropdown-lists/pratella.jpg");
 }
 
-.main__item-link--severini {
+.header-container-down__item-link--severini {
   background-image: url("../img/dropdown-lists/severini.jpg");
 }
 
-.main__item-link--balla {
+.header-container-down__item-link--balla {
   background-image: url("../img/dropdown-lists/balla.jpg");
 }
 
-.main__item-text {
+.header-container-down__item-text {
   position: relative;
 }
 
-.main__item-link:hover,
-.main__item-link:focus {
+.header-container-down__item-link:hover:not(:active),
+.header-container-down__item-link:focus {
   border-color: var(--dark-violet);
   outline: none;
 }
 
-.main__item-link:active::before {
+.header-container-down__item-link:active::before {
   opacity: 1;
 }
 
-.main__dropdown .simplebar-track.simplebar-vertical {
+.header-container-down__dropdown .simplebar-track.simplebar-vertical {
   width: 2px;
   background-color: var(--header-black);
 }
 
-.main__dropdown
+.header-container-down__dropdown
   .simplebar-track.simplebar-vertical
   .simplebar-scrollbar:before {
   top: 0;
@@ -285,7 +285,7 @@
   padding-bottom: 16px;
 }
 
-.input__search-down {
+.search__form-down-input {
   display: inline-block;
   width: 218px;
   padding-bottom: 2px;
@@ -300,75 +300,75 @@
   transition: border-bottom .3s ease-in-out;
 }
 
-.search__subbmit-down svg {
+.search__form-down-subbmit svg {
   width: 25px;
   height: 25px;
 }
 
-.search__subbmit-down {
+.search__form-down-subbmit {
   position: relative;
   margin-top: 3px;
   margin-right: 6.5px;
   transition: fill .3s ease-in-out;
 }
 
-.search__subbmit-down svg rect,
-.search__subbmit-down svg path {
+.search__form-down-subbmit svg rect,
+.search__form-down-subbmit svg path {
   transition: fill .3s ease-in-out;
 }
 
-.search__subbmit-down:hover:not(:active) svg rect {
-  transition: fill .3s ease-in-out;
-
-  fill: var(--burger-violet);
-}
-
-.search__subbmit-down:hover:not(:active) svg path {
+.search__form-down-subbmit:hover:not(:active) svg rect {
   transition: fill .3s ease-in-out;
 
   fill: var(--burger-violet);
 }
 
-.search__subbmit-down:active svg rect {
+.search__form-down-subbmit:hover:not(:active) svg path {
+  transition: fill .3s ease-in-out;
+
+  fill: var(--burger-violet);
+}
+
+.search__form-down-subbmit:active svg rect {
   fill: var(--burger-violet-active);
 }
 
-.search__subbmit-down:active svg path {
+.search__form-down-subbmit:active svg path {
   fill: var(--burger-violet-active);
 }
 
-.search__subbmit-down:focus-visible {
+.search__form-down-subbmit:focus-visible {
   outline: 2px solid var(--burger-violet);
 }
 
-.input__search-down::-webkit-input-placeholder {
+.search__form-down-input::-webkit-input-placeholder {
   font-size: 18px;
 }
 
-.input__search-down:focus-visible::-webkit-input-placeholder {
+.search__form-down-input:focus-visible::-webkit-input-placeholder {
   color: var(--burger-violet-active);
 }
 
-.input__search-down:focus-visible {
+.search__form-down-input:focus-visible {
   border-color: var(--burger-violet-active);
 }
 
-.input__search-down:hover:not(:active)::-webkit-input-placeholder {
+.search__form-down-input:hover:not(:active)::-webkit-input-placeholder {
   color: var(--burger-violet);
 }
 
-.input__search-down:hover:not(:active) {
+.search__form-down-input:hover:not(:active) {
   border-color: var(--burger-violet);
 }
 
 @media (max-width: 1890px) {
-  .input__search-down {
+  .search__form-down-input {
     width: 145px;
   }
 }
 
 @media (max-width: 1440px) {
-  .main__list {
+  .header-container-down__list {
     width: 50%;
   }
 }

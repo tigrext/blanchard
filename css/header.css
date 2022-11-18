@@ -42,7 +42,7 @@
   transition: color .3s ease-in-out;
 }
 
-.header-list__item-link:hover {
+.header-list__item-link:hover:not(:active) {
   color: var(--burger-violet);
 }
 
@@ -126,16 +126,16 @@
   margin-left: -4px;
 }
 
-.header-link:hover .header-link__arrow-wrap {
+.header-link:hover:not(:active) .header-link__arrow-wrap {
   margin-left: -4px;
   padding-left: 4px;
 }
 
-.header-link:hover {
+.header-link:hover:not(:active) {
   color: var(--burger-violet);
 }
 
-.header-link:hover svg path {
+.header-link:hover:not(:active) svg path {
   fill: var(--burger-violet);
 }
 

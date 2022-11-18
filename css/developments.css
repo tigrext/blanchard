@@ -103,7 +103,7 @@
   transition: color .3s ease-in-out;
 }
 
-.developments__link-date-place-custom:hover {
+.developments__link-date-place-custom:hover:not(:active) {
   border-bottom: 1px solid var(--burger-violet-active);
   color: var(--burger-violet-active);
 }
@@ -183,7 +183,7 @@
   cursor: pointer;
 }
 
-.developments__nav-btn:hover {
+.developments__nav-btn:hover:not(:active) {
   background-color: var(--border);
   transition: background-color .3s ease-in-out;
 }

@@ -109,7 +109,7 @@
   transition: background-color .3s ease-in-out;
 }
 
-.contacts__button-custom:hover {
+.contacts__button-custom:hover:not(:active) {
   color: var(--header-white);
   background-color: var(--dark-violet);
 }
@@ -149,7 +149,7 @@
   margin-right: 20px;
 }
 
-.contacts__item-list-link:hover svg {
+.contacts__item-list-link:hover:not(:active) svg {
   opacity: .5;
 }
 
