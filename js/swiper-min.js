@@ -1139,7 +1139,7 @@
       if (
         (p !== d && e.emit("slidesLengthChange"),
         u.length !== w &&
-          (e.params.watchOverflow && e.checkOverflow(),
+          (e.params.watchoverflow && e.checkOverflow(),
           e.emit("snapGridLengthChange")),
         h.length !== b && e.emit("slidesGridLengthChange"),
         a.watchSlidesProgress && e.updateSlidesOffset(),
@@ -2282,7 +2282,7 @@
       e.autoplay && e.autoplay.running && e.autoplay.paused && e.autoplay.run(),
       (e.allowSlidePrev = i),
       (e.allowSlideNext = a),
-      e.params.watchOverflow && r !== e.snapGrid && e.checkOverflow();
+      e.params.watchoverflow && r !== e.snapGrid && e.checkOverflow();
   }
   function D(e) {
     const t = this;
@@ -2455,7 +2455,7 @@
     slidesOffsetAfter: 0,
     normalizeSlideIndex: !0,
     centerInsufficientSlides: !1,
-    watchOverflow: !0,
+    watchoverflow: !0,
     roundLengths: !1,
     touchRatio: 1,
     touchAngle: 45,
@@ -2567,7 +2567,7 @@
           if (
             t.support.touch ||
             !t.params.simulateTouch ||
-            (t.params.watchOverflow && t.isLocked) ||
+            (t.params.watchoverflow && t.isLocked) ||
             t.params.cssMode
           )
             return;
@@ -2578,7 +2578,7 @@
         unsetGrabCursor: function () {
           const e = this;
           e.support.touch ||
-            (e.params.watchOverflow && e.isLocked) ||
+            (e.params.watchoverflow && e.isLocked) ||
             e.params.cssMode ||
             (e[
               "container" === e.params.touchEventsTarget ? "el" : "wrapperEl"
@@ -2963,7 +2963,7 @@
                 ? e.slideTo(e.slides.length - 1, 0, !1, !0)
                 : e.slideTo(e.activeIndex, 0, !1, !0)),
             i || a()),
-        s.watchOverflow && t !== e.snapGrid && e.checkOverflow(),
+        s.watchoverflow && t !== e.snapGrid && e.checkOverflow(),
         e.emit("update");
     }
     changeDirection(e, t) {
@@ -3051,7 +3051,7 @@
           t.params.loop && t.loopCreate(),
           t.updateSize(),
           t.updateSlides(),
-          t.params.watchOverflow && t.checkOverflow(),
+          t.params.watchoverflow && t.checkOverflow(),
           t.params.grabCursor && t.enabled && t.setGrabCursor(),
           t.params.preloadImages && t.preloadImages(),
           t.params.loop
@@ -3967,7 +3967,7 @@
           e.length > 0 &&
           (e[s ? "addClass" : "removeClass"](a.disabledClass),
           e[0] && "BUTTON" === e[0].tagName && (e[0].disabled = s),
-          t.params.watchOverflow &&
+          t.params.watchoverflow &&
             t.enabled &&
             e[t.isLocked ? "addClass" : "removeClass"](a.lockClass));
       }
@@ -4259,7 +4259,7 @@
         "custom" === s.type && s.renderCustom
           ? (r.html(s.renderCustom(t, p + 1, u)), i("paginationRender", r[0]))
           : i("paginationUpdate", r[0]),
-          t.params.watchOverflow &&
+          t.params.watchoverflow &&
             t.enabled &&
             r[t.isLocked ? "addClass" : "removeClass"](s.lockClass);
       }
@@ -4479,7 +4479,7 @@
             : (s[0].style.height = `${o}px`),
           (a[0].style.display = u >= 1 ? "none" : ""),
           t.params.scrollbar.hide && (a[0].style.opacity = 0),
-          t.params.watchOverflow &&
+          t.params.watchoverflow &&
             t.enabled &&
             e.$el[t.isLocked ? "addClass" : "removeClass"](
               t.params.scrollbar.lockClass

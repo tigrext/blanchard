@@ -133,7 +133,8 @@ let swiper = new Swiper(".swiper", {
   const select = document.querySelector('.js-custom-select');
 const choices = new Choices(select, {
   searchEnabled: false,
-  itemSelectText: '',
+  shouldSort: false,
+  // itemSelectText: '',
   position: 'bottom',
   classNames: {
       containerOuter: 'default-select',
@@ -742,7 +743,7 @@ class Modal {
 	events() {
 		if (this.modal) {
 			document.addEventListener('click', function(e){
-				const clickedElement = e.target.closest('[data-path]');
+				const clickedElement = e.target.closest('.galery__swiper .swiper-slide[data-path]');
 				if (clickedElement) {
 					let target = clickedElement.dataset.path;
 					let animation = clickedElement.dataset.animation;
