@@ -28,14 +28,6 @@
   outline-offset: 4px;
 }
 
-.search__btn:hover:not(:active) svg rect {
-  fill: var(--burger-violet);
-}
-
-.search__btn:hover:not(:active) svg path {
-  fill: var(--burger-violet);
-}
-
 .search__form {
   position: fixed;
   top: 20px;
@@ -85,14 +77,6 @@
   border-color: var(--burger-violet-active);
 }
 
-.input__search:hover:not(:active)::-webkit-input-placeholder {
-  color: var(--burger-violet);
-}
-
-.input__search:hover:not(:active) {
-  border-color: var(--burger-violet);
-}
-
 .search__exit {
   position: relative;
   bottom: 28px;
@@ -119,14 +103,6 @@
   stroke: var(--burger-violet-active);
 }
 
-.search__exit:hover:not(:active) svg rect {
-  fill: var(--burger-violet);
-}
-
-.search__exit:hover:not(:active) svg circle {
-  stroke: var(--burger-violet);
-}
-
 .search__subbmit {
   position: relative;
   margin-right: 10.5px;
@@ -141,18 +117,6 @@
 .search__subbmit svg rect,
 .search__subbmit svg path {
   transition: fill .3s ease-in-out;
-}
-
-.search__subbmit:hover:not(:active) svg rect {
-  transition: fill .3s ease-in-out;
-
-  fill: var(--burger-violet);
-}
-
-.search__subbmit:hover:not(:active) svg path {
-  transition: fill .3s ease-in-out;
-
-  fill: var(--burger-violet);
 }
 
 .search__subbmit:active svg rect {
@@ -299,5 +263,41 @@
     top: 11px;
     width: calc(100% / 1.52);
     margin-left: 12%;
+  }
+}
+
+@media (any-hover: hover) {
+  .search__btn:hover:not(:active) svg rect {
+    fill: var(--burger-violet);
+  }
+
+  .search__btn:hover:not(:active) svg path {
+    fill: var(--burger-violet);
+  }
+
+  .input__search:hover:not(:active)::-webkit-input-placeholder {
+    color: var(--burger-violet);
+  }
+
+  .input__search:hover:not(:active) {
+    border-color: var(--burger-violet);
+  }
+
+  .search__exit:hover:not(:active) svg rect {
+    fill: var(--burger-violet);
+  }
+
+  .search__exit:hover:not(:active) svg circle {
+    stroke: var(--burger-violet);
+  }
+
+  .search__subbmit:hover:not(:active) svg rect {
+    transition: fill .3s ease-in-out;
+    fill: var(--burger-violet);
+  }
+
+  .search__subbmit:hover:not(:active) svg path {
+    transition: fill .3s ease-in-out;
+    fill: var(--burger-violet);
   }
 }

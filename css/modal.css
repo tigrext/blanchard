@@ -53,13 +53,6 @@
   outline: none;
 }
 
-.hamburger-box-modal:hover:not(:active) .hamburger-modal,
-.hamburger-box-modal:hover:not(:active) .hamburger-modal::after {
-  background-color: var(--dark-violet);
-  transition: background-color 0.3s ease-in-out;
-  outline: none;
-}
-
 .hamburger-box-modal:active .hamburger-modal,
 .hamburger-box-modal:active .hamburger-modal::after {
   background-color: var(--burger-violet-active);
@@ -253,5 +246,14 @@
 
   .modal__content-right-description {
     text-align: center;
+  }
+}
+
+@media (any-hover: hover) {
+  .hamburger-box-modal:hover:not(:active) .hamburger-modal,
+  .hamburger-box-modal:hover:not(:active) .hamburger-modal::after {
+    background-color: var(--dark-violet);
+    transition: background-color 0.3s ease-in-out;
+    outline: none;
   }
 }

@@ -14,22 +14,10 @@
   outline-offset: 7px;
 }
 
-.hamburger:hover:not(:active) .hamburger-inner,
-.hamburger:hover:not(:active) .hamburger-inner::before,
-.hamburger:hover:not(:active) .hamburger-inner::after {
-  background-color: var(--burger-violet);
-}
-
 .hamburger:active .hamburger-inner,
 .hamburger:active .hamburger-inner::before,
 .hamburger:active .hamburger-inner::after {
   background-color: var(--burger-violet-active);
-}
-
-.hamburger.is--active:hover:not(:active) .hamburger-inner,
-.hamburger.is--active:hover:not(:active) .hamburger-inner::before,
-.hamburger.is--active:hover:not(:active) .hamburger-inner::after {
-  background-color: var(--burger-violet);
 }
 
 .hamburger.is--active:active .hamburger-inner,
@@ -221,4 +209,19 @@
   .burger-menu {
     margin-bottom: 20px;
   }
+}
+
+@media (any-hover: hover) {
+  .hamburger.is--active:hover:not(:active) .hamburger-inner,
+  .hamburger.is--active:hover:not(:active) .hamburger-inner::before,
+  .hamburger.is--active:hover:not(:active) .hamburger-inner::after {
+    background-color: var(--burger-violet);
+  }
+
+  .hamburger:hover:not(:active) .hamburger-inner,
+  .hamburger:hover:not(:active) .hamburger-inner::before,
+  .hamburger:hover:not(:active) .hamburger-inner::after {
+    background-color: var(--burger-violet);
+  }
+
 }

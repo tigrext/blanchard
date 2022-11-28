@@ -83,10 +83,6 @@
   transition: background-color .3s ease-in-out;
 }
 
-.default-select__inner:hover:not(:active) {
-  background-color: rgba(255, 255, 255, .2);
-}
-
 .is-focused .default-select__inner,
 .is-open .default-select__inner {
   background-color: rgba(255, 255, 255, .2);
@@ -248,5 +244,11 @@
 @media (max-width: 320px) {
   .default-select {
     margin-bottom: 27px;
+  }
+}
+
+@media (any-hover: hover) {
+  .default-select__inner:hover:not(:active) {
+    background-color: rgba(255, 255, 255, .2);
   }
 }

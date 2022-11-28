@@ -42,10 +42,6 @@
   transition: color .3s ease-in-out;
 }
 
-.header-list__item-link:hover:not(:active) {
-  color: var(--burger-violet);
-}
-
 .header-list__item-link:active {
   color: var(--burger-violet-active);
 }
@@ -124,19 +120,6 @@
 
 .header-link__arrow {
   margin-left: -4px;
-}
-
-.header-link:hover:not(:active) .header-link__arrow-wrap {
-  margin-left: -4px;
-  padding-left: 4px;
-}
-
-.header-link:hover:not(:active) {
-  color: var(--burger-violet);
-}
-
-.header-link:hover:not(:active) svg path {
-  fill: var(--burger-violet);
 }
 
 .header-link::after {
@@ -460,5 +443,24 @@
 
   .header-list {
     margin-bottom: 300px;
+  }
+}
+
+@media (any-hover: hover) {
+  .header-list__item-link:hover:not(:active) {
+    color: var(--burger-violet);
+  }
+
+  .header-link:hover:not(:active) .header-link__arrow-wrap {
+    margin-left: -4px;
+    padding-left: 4px;
+  }
+
+  .header-link:hover:not(:active) {
+    color: var(--burger-violet);
+  }
+
+  .header-link:hover:not(:active) svg path {
+    fill: var(--burger-violet);
   }
 }

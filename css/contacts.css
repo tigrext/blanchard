@@ -86,10 +86,6 @@
   color: var(--border-grey);
 }
 
-.contacts__label-input:hover:not(:active) {
-  background-color: var(--paggination-disable);
-}
-
 .contacts__label-input:focus-visible {
   outline: none;
   background-color: var(--paggination-disable);
@@ -109,18 +105,30 @@
   transition: background-color .3s ease-in-out;
 }
 
-.contacts__button-custom:hover:not(:active) {
-  color: var(--header-white);
-  background-color: var(--dark-violet);
+.contacts__button-small-custom {
+  display: none;
+  width: 100%;
+  max-width: 128px;
+  height: 40px;
+  padding: 11px 34px 11px 33px;
+  border: 2px solid var(--dark-violet);
+  border-radius: 100px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--dark-violet);
+  transition: background-color .3s ease-in-out;
 }
 
-.contacts__button-custom:focus-visible {
+.contacts__button-small-custom:focus-visible,
+.contacts__button-small-custom:focus-visible {
   color: var(--header-white);
   outline: none;
   background-color: var(--dark-violet);
 }
 
-.contacts__button-custom:active {
+.contacts__button-small-custom:active,
+.contacts__button-small-custom:active {
   color: var(--header-white);
   background-color: var(--burger-violet-active);
 }
@@ -362,7 +370,7 @@
     }
 
     .contacts__form {
-      margin-bottom: 6px;
+      margin-bottom: 15px;
     }
 
     .contacts__label-input::-webkit-input-placeholder {
@@ -383,6 +391,14 @@
       height: 40px;
       font-size: 16px;
       line-height: 32px;
+    }
+
+    .contacts__button-custom  {
+      display: none;
+    }
+
+    .contacts__button-small-custom  {
+      display: block;
     }
 
     .contacts__social-title {
@@ -407,5 +423,17 @@
     .contacts__map {
       min-height: 335px;
     }
+  }
+}
+
+@media (any-hover: hover) {
+  .contacts__label-input:hover:not(:active) {
+    background-color: var(--paggination-disable);
+  }
+
+  .contacts__button-small-custom:hover:not(:active),
+  .contacts__button-small-custom:hover:not(:active) {
+    color: var(--header-white);
+    background-color: var(--dark-violet);
   }
 }
