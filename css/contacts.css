@@ -344,6 +344,15 @@
     }
   }
 
+  @media (max-width: 440px) {
+    .contacts__button-custom  {
+      display: none;
+    }
+
+    .contacts__button-small-custom  {
+      display: block;
+    }
+  }
   @media (max-width: 380px) {
     .contacts__button-custom {
       max-width: 180px;
@@ -397,14 +406,6 @@
       height: 40px;
       font-size: 16px;
       line-height: 32px;
-    }
-
-    .contacts__button-custom  {
-      display: none;
-    }
-
-    .contacts__button-small-custom  {
-      display: block;
     }
 
     .contacts__social-title {
