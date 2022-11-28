@@ -338,30 +338,35 @@ document.addEventListener("DOMContentLoaded", () => {
       320: {
         slidesPerView: 1,
         spaceBetween: 20,
+        slidesPerGroup: 1,
         allowTouchMove: true
       },
 
-      340: {
+      321: {
         slidesPerView: 2,
         spaceBetween: 5,
+        slidesPerGroup: 2,
         allowTouchMove: true
       },
 
       410: {
         slidesPerView: 2,
         spaceBetween: 33,
+        slidesPerGroup: 2,
         allowTouchMove: true
       },
 
       769: {
         slidesPerView: 3,
         spaceBetween: 27,
+        slidesPerGroup: 3,
         allowTouchMove: true
       },
 
       1024: {
         slidesPerView: 3,
         spaceBetween: 50,
+        slidesPerGroup: 3,
         allowTouchMove: true
       },
 
@@ -371,7 +376,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
       1200: {
         slidesPerView: 3,
-        spaceBetween: 50,
+        spaceBetween: 57,
+        slidesPerGroup: 3
       },
     },
 
@@ -459,14 +465,14 @@ document.addEventListener("DOMContentLoaded", () => {
       320: {
         slidesPerView: 1,
         spaceBetween: 20,
-        slidesPerGroup: 2,
+        slidesPerGroup: 1,
         allowTouchMove: true
       },
 
       321: {
         slidesPerView: 1,
         spaceBetween: 5,
-        slidesPerGroup: 2,
+        slidesPerGroup: 1,
         allowTouchMove: true
       },
 
