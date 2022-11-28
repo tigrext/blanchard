@@ -338,6 +338,12 @@
     }
   }
 
+  @media (max-width: 768px) {
+    .contacts__button-custom {
+      font-size: 14px;
+    }
+  }
+
   @media (max-width: 380px) {
     .contacts__button-custom {
       max-width: 180px;
