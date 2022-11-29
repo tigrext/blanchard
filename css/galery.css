@@ -253,6 +253,7 @@
 }
 
 .slide-custom:focus::before {
+  height: 100%;
   border-color: #7943a4;
 }
 
