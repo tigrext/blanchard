@@ -120,6 +120,19 @@
   transition: background-color .3s ease-in-out;
 }
 
+.contacts__button-custom:focus-visible,
+.contacts__button-custom:focus-visible {
+  color: var(--header-white);
+  outline: none;
+  background-color: var(--dark-violet);
+}
+
+.contacts__button-custom:active,
+.contacts__button-custom:active {
+  color: var(--header-white);
+  background-color: var(--burger-violet-active);
+}
+
 .contacts__button-small-custom:focus-visible,
 .contacts__button-small-custom:focus-visible {
   color: var(--header-white);
@@ -436,6 +449,12 @@
 @media (any-hover: hover) {
   .contacts__label-input:hover:not(:active) {
     background-color: var(--paggination-disable);
+  }
+
+  .contacts__button-custom:hover:not(:active),
+  .contacts__button-custom:hover:not(:active) {
+    color: var(--header-white);
+    background-color: var(--dark-violet);
   }
 
   .contacts__button-small-custom:hover:not(:active),
