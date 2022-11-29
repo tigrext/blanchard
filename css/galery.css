@@ -226,6 +226,7 @@
   padding-top: calc(100% - 6px);
   border: 3px solid transparent;
   transition: background-color .3s ease, border-color .3s ease;
+  height: 100%;
 }
 
 .slide-custom::after {
@@ -328,7 +329,7 @@
   }
 
   .slide-custom::before {
-    height: 315px;
+    padding-top: calc(100% + 30px);
   }
 }
 
@@ -369,7 +370,7 @@
   }
 
   .slide-custom::before {
-    height: 330px;
+    padding-top: calc(100% + 8px);
   }
 }
 
@@ -411,16 +412,12 @@
   }
 
   .slide-custom::before {
-    height: 367px;
+    padding-top: calc(110% - 5px);
   }
 
   .galery__navigation {
     align-self: center;
     margin-top: 20px;
-  }
-
-  .slide-custom::before {
-    padding-top: calc(110% - 6px);
   }
 }
 
