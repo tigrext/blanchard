@@ -257,6 +257,7 @@
 }
 
 .slide-custom:active::before {
+  height: 100%;
   border-color: #d1a9f0;
   background-color: rgba(194, 131, 243, .4);
 }
