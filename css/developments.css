@@ -184,6 +184,7 @@
 }
 
 .developments__nav-btn:active {
+  background-color: var(--border);
   outline: 2px solid var(--dark-violet);
   outline-offset: -1px;
 }
