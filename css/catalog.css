@@ -379,6 +379,7 @@
 
 .link--text-another:active::after {
   transform: scaleX(0);
+  transition: transform 0.05s ease;
 }
 
 @media (max-width: 1200px) {
