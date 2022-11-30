@@ -219,7 +219,8 @@
   }
 
   .search__form {
-    height: 0;
+    height: 0px;
+    padding: 34px 50px 55px 50px;
   }
 
   .search__btn:focus-visible:not(:hover):not(:active) {
@@ -255,7 +256,7 @@
 
 @media (max-width: 320px) {
   .search__form {
-    height: 45px;
+    height: 44px;
     padding: 12px 15px;
   }
 
