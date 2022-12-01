@@ -902,3 +902,7 @@ $.preloadImages("../img/dropdown-lists/tintoretto.jpg","../img/dropdown-lists/fr
 "../img/dropdown-lists/sezann.jpg","../img/dropdown-lists/gogen.jpg","../img/dropdown-lists/sera.jpg","../img/dropdown-lists/kandinskiy.jpg","../img/dropdown-lists/marinetti.jpg",
 "../img/dropdown-lists/malevich.jpg","../img/dropdown-lists/picasso.jpg","../img/dropdown-lists/karra.jpg","../img/dropdown-lists/pratella.jpg","../img/dropdown-lists/severini.jpg",
 "../img/dropdown-lists/balla.jpg");
+
+document.getElementById('header-container-down__item-link--tintoretto').addEventListener('load', () =>
+  document.body.classList.add('header-container-down__item-link--tintoretto')
+);
