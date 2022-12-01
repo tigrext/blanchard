@@ -97,7 +97,6 @@
 
 .hamburger--elastic.is--active .hamburger-inner {
   width: 37px;
-  transition-delay: .075s;
   transform: translate3d(0, 10px, 0) rotate(135deg);
 }
 
