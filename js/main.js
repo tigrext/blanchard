@@ -888,21 +888,7 @@ const modal = new Modal({
 	},
 });
 
-//создаем JQuery функцию, которая будет подгружать изображения в буфер
-jQuery.preloadImages = function()
- {
-  for(var i = 0; i < arguments.length; i++)
-  {
-   jQuery("<img>").attr("src", arguments[ i ]);
-  }
- };
-//указываем путь к изображению, которое нужно подгрузить
-$.preloadImages("../img/dropdown-lists/tintoretto.jpg","../img/dropdown-lists/fridrih.jpg","../img/dropdown-lists/leonardo.jpg","../img/dropdown-lists/verrocko.jpg",
-"../img/dropdown-lists/mone.jpg","../img/dropdown-lists/sisley.jpg","../img/dropdown-lists/mane.jpg","../img/dropdown-lists/renuar.jpg","../img/dropdown-lists/vangog.jpg",
-"../img/dropdown-lists/sezann.jpg","../img/dropdown-lists/gogen.jpg","../img/dropdown-lists/sera.jpg","../img/dropdown-lists/kandinskiy.jpg","../img/dropdown-lists/marinetti.jpg",
-"../img/dropdown-lists/malevich.jpg","../img/dropdown-lists/picasso.jpg","../img/dropdown-lists/karra.jpg","../img/dropdown-lists/pratella.jpg","../img/dropdown-lists/severini.jpg",
-"../img/dropdown-lists/balla.jpg");
 
-document.getElementById('header-container-down__item-link--tintoretto').addEventListener('load', () =>
-  document.body.classList.add('header-container-down__item-link--tintoretto')
-);
+// document.getElementById('header-container-down__item-link--tintoretto').addEventListener('load', () =>
+//   document.body.classList.add('header-container-down__item-link--tintoretto')
+// );
