@@ -29,6 +29,7 @@
 }
 
 .search__form {
+  display: flex;
   position: fixed;
   top: 30px;
   right: 20px;
@@ -40,7 +41,6 @@
 }
 
 .search__form--active {
-  display: none;
   transform: translate(0);
 }
 
@@ -127,11 +127,13 @@
   outline: 2px solid var(--burger-violet);
 }
 
-@media (max-width: 1024px) {
-  .search__form--active {
-    display: flex;
+@media (min-width: 1025px) {
+  .search__form {
+    display: none;
   }
+}
 
+@media (max-width: 1024px) {
   .search__btn {
     width: 29px;
     height: 33px;
