@@ -887,8 +887,3 @@ const modal = new Modal({
 		console.log('closed');
 	},
 });
-
-
-// document.getElementById('header-container-down__item-link--tintoretto').addEventListener('load', () =>
-//   document.body.classList.add('header-container-down__item-link--tintoretto')
-// );
