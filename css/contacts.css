@@ -102,7 +102,6 @@
   font-weight: 700;
   line-height: 25px;
   color: var(--dark-violet);
-  transition: background-color .3s ease-in-out;
 }
 
 .contacts__button-small-custom {
@@ -117,31 +116,28 @@
   font-size: 12px;
   line-height: 16px;
   color: var(--dark-violet);
-  transition: background-color .3s ease-in-out;
 }
 
-.contacts__button-custom:focus-visible,
 .contacts__button-custom:focus-visible {
   color: var(--header-white);
   outline: none;
   background-color: var(--dark-violet);
+  transition: background-color .3s ease-in-out;
 }
 
-.contacts__button-custom:active,
-.contacts__button-custom:active {
+.contacts__button-custom:active{
   color: var(--header-white);
   background-color: var(--burger-violet-active);
 }
 
-.contacts__button-small-custom:focus-visible,
-.contacts__button-small-custom:focus-visible {
+.contacts__button-small-custom:focus-visible{
   color: var(--header-white);
   outline: none;
   background-color: var(--dark-violet);
+  transition: background-color .3s ease-in-out;
 }
 
-.contacts__button-small-custom:active,
-.contacts__button-small-custom:active {
+.contacts__button-small-custom:active{
   color: var(--header-white);
   background-color: var(--burger-violet-active);
 }
@@ -451,15 +447,15 @@
     background-color: var(--paggination-disable);
   }
 
-  .contacts__button-custom:hover:not(:active),
   .contacts__button-custom:hover:not(:active) {
     color: var(--header-white);
     background-color: var(--dark-violet);
+    transition: background-color .3s ease-in-out;
   }
 
-  .contacts__button-small-custom:hover:not(:active),
   .contacts__button-small-custom:hover:not(:active) {
     color: var(--header-white);
     background-color: var(--dark-violet);
+    transition: background-color .3s ease-in-out;
   }
 }
