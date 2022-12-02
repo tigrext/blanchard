@@ -215,14 +215,18 @@ document.addEventListener("DOMContentLoaded", () => {
         allowTouchMove: true
       },
 
-      1025: {
-        allowTouchMove: false
-      },
-
       1200: {
         slidesPerView: 3,
         slidesPerGroup: 3,
-        spaceBetween: 50
+        spaceBetween: 50,
+        allowTouchMove: true
+      },
+
+      1201: {
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+        spaceBetween: 50,
+        allowTouchMove: false
       }
     },
 
@@ -370,15 +374,19 @@ document.addEventListener("DOMContentLoaded", () => {
         allowTouchMove: true
       },
 
-      1025: {
-        allowTouchMove: false
-      },
-
       1200: {
         slidesPerView: 3,
         spaceBetween: 57,
-        slidesPerGroup: 3
+        slidesPerGroup: 3,
+        allowTouchMove: true
       },
+
+      1201: {
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+        spaceBetween: 50,
+        allowTouchMove: false
+      }
     },
 
     a11y: false,
@@ -497,15 +505,19 @@ document.addEventListener("DOMContentLoaded", () => {
         allowTouchMove: true
       },
 
-      1025: {
-        allowTouchMove: false
-      },
-
       1200: {
         slidesPerView: 3,
         slidesPerGroup: 3,
-        spaceBetween: 50
+        spaceBetween: 50,
+        allowTouchMove: true
       },
+
+      1201: {
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+        spaceBetween: 50,
+        allowTouchMove: false
+      }
     },
 
     a11y: false,
