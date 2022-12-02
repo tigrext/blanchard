@@ -53,7 +53,6 @@ search_close.addEventListener("click", function (e) {
   form_search.classList.remove("search__form--active");
 });
 
-
 // Выпадающий список хедера
 const params = {
   btnClassName: "js-header-dropdown-btn",
