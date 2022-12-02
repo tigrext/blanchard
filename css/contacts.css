@@ -104,20 +104,6 @@
   color: var(--dark-violet);
 }
 
-.contacts__button-small-custom {
-  display: none;
-  width: 100%;
-  max-width: 128px;
-  height: 40px;
-  padding: 11px 34px 11px 33px;
-  border: 2px solid var(--dark-violet);
-  border-radius: 100px;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 16px;
-  color: var(--dark-violet);
-}
-
 .contacts__button-custom:focus-visible {
   color: var(--header-white);
   outline: none;
@@ -126,18 +112,6 @@
 }
 
 .contacts__button-custom:active{
-  color: var(--header-white);
-  background-color: var(--burger-violet-active);
-}
-
-.contacts__button-small-custom:focus-visible{
-  color: var(--header-white);
-  outline: none;
-  background-color: var(--dark-violet);
-  transition: background-color .3s ease-in-out;
-}
-
-.contacts__button-small-custom:active{
   color: var(--header-white);
   background-color: var(--burger-violet-active);
 }
@@ -354,14 +328,19 @@
   }
 
   @media (max-width: 440px) {
-    .contacts__button-custom  {
-      display: none;
+    .contacts__button-custom {
+      max-width: 128px;
+      height: 40px;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 16px;
     }
 
-    .contacts__button-small-custom  {
-      display: block;
+    .contacts__button-custom-span {
+      display: none;
     }
   }
+
   @media (max-width: 380px) {
     .contacts__button-custom {
       max-width: 180px;
@@ -448,12 +427,6 @@
   }
 
   .contacts__button-custom:hover:not(:active) {
-    color: var(--header-white);
-    background-color: var(--dark-violet);
-    transition: background-color .3s ease-in-out;
-  }
-
-  .contacts__button-small-custom:hover:not(:active) {
     color: var(--header-white);
     background-color: var(--dark-violet);
     transition: background-color .3s ease-in-out;
