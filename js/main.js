@@ -681,7 +681,7 @@ document.querySelectorAll('.js-scroll-link-pc').forEach(link => {
 
 // Плавный Скролл только на мобильном
 (() => {
-	const MOBILE_WIDTH = 580;
+	const MOBILE_WIDTH = 1024;
 
 	function getWindowWidth () {
 	  return Math.max(
