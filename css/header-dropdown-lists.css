@@ -1,6 +1,5 @@
 .header-container-down {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   padding-top: 23px;
   background-color: rgba(0, 0, 0, .5);
@@ -339,6 +338,10 @@
   border-color: var(--burger-violet-active);
 }
 
+.search-down {
+  display: none;
+}
+
 @media (max-width: 1890px) {
   .search__form-down-input {
     width: 145px;
@@ -352,7 +355,34 @@
 }
 
 @media (max-width: 1200px) {
+  .header-container-down__list {
+    width: 34%;
+  }
+
+  .search__form-down {
+    display: none;
+  }
+
+  .search__btn-down {
+    display: block;
+  }
+
+  .search-down {
+    display: block;
+    margin-right: 2%;
+  }
+}
+
+@media (max-width: 1024px) {
   .header-container-down {
+    display: none;
+  }
+
+  .search__btn-down {
+    display: none;
+  }
+
+  .search-down {
     display: none;
   }
 }
