@@ -219,7 +219,7 @@
     height: 100vh;
     padding: 30px;
     background-color: var(--dark-grey);
-    transition: transform .6s ease-in-out;
+    transition: transform .3s ease-in-out;
     transition-delay: .35s;
     transform: translateX(-100%);
   }
