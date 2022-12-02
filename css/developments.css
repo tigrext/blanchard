@@ -12,6 +12,10 @@
   height: unset;
 }
 
+.developments-img {
+  width: 100%;
+}
+
 .developments__title-custom {
   margin: 0;
 }
