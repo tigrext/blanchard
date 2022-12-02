@@ -219,9 +219,11 @@
     height: 100vh;
     padding: 30px;
     background-color: var(--dark-grey);
-    transition: transform .3s ease-in-out;
+    transition: transform .3s ease-in-out, opacity .2s ease-in-out;
     transition-delay: .35s;
     transform: translateX(-100%);
+    opacity: 0;
+    visibility: hidden;
   }
 
   .header-nav-menu {
@@ -232,12 +234,12 @@
     height: 100%;
     padding: 40px 48px 50px 49px;
     font-size: 28px;
-    opacity: 0;
   }
 
   .header-nav--visible {
     transform: none;
     opacity: 1;
+    visibility: visible;
   }
 
   .header-list {
