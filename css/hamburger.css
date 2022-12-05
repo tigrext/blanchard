@@ -59,9 +59,7 @@
   height: 3px;
   border-radius: 4px;
   background-color: var(--header-white);
-  transition-timing-function: ease;
-  transition-duration: .15s;
-  transition-property: transform;
+  transition-property: transform .15s ease;
 }
 
 .hamburger-inner::before,
@@ -82,17 +80,15 @@
 
 .hamburger--elastic .hamburger-inner {
   top: 2px;
-  transition: background-color .2s ease-in-out, transform .15s ease;
+  transition: transform .3s ease;
 }
 
 .hamburger--elastic .hamburger-inner::before {
   top: 10px;
-  transition: background-color .2s ease-in-out;
 }
 
 .hamburger--elastic .hamburger-inner::after {
   top: 20px;
-  transition: background-color .2s ease-in-out;
 }
 
 .hamburger--elastic.is--active .hamburger-inner {
@@ -108,7 +104,6 @@
 
 .hamburger--elastic.is--active .hamburger-inner::after {
   width: 37px;
-  transition-delay: .075s;
   transform: translate3d(0, -20px, 0) rotate(-270deg);
 }
 
