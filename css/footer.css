@@ -54,7 +54,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 440px) {
   .footer-container {
     flex-direction: column-reverse;
     padding-top: 20px;
