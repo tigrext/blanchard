@@ -79,7 +79,7 @@
   font-weight: 400;
   line-height: 32px;
   color: var(--font-black);
-  transition: background-color .3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .contacts__label-input::-webkit-input-placeholder {
@@ -108,10 +108,10 @@
   color: var(--header-white);
   outline: none;
   background-color: var(--dark-violet);
-  transition: background-color .3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 
-.contacts__button-custom:active{
+.contacts__button-custom:active {
   color: var(--header-white);
   background-color: var(--burger-violet-active);
 }
@@ -141,7 +141,7 @@
 }
 
 .contacts__item-list-link:hover:not(:active) svg {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .contacts__item-list-link:focus-visible {
@@ -149,7 +149,7 @@
 }
 
 .contacts__item-list-link:focus-visible svg {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .contacts__item-list-link::after {
@@ -240,6 +240,14 @@
   }
 }
 
+@media (max-width: 1200px) {
+  .contacts__button-custom:hover {
+    color: var(--header-white);
+    background-color: var(--burger-violet-active);
+    transition: background-color .3s ease-in-out;
+  }
+}
+
 @media (max-width: 1024px) {
   .contacts-top {
     padding-top: 10px;
@@ -281,143 +289,143 @@
   .contacts__social-title {
     margin-bottom: 5px;
   }
+}
 
-  @media (max-width: 1023px) and (min-width: 769px) {
-    .contacts__button-custom {
-      height: unset;
-    }
+@media (max-width: 1023px) and (min-width: 769px) {
+  .contacts__button-custom {
+    height: unset;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts-top {
+    padding-top: 42px;
   }
 
-  @media (max-width: 768px) {
-    .contacts-top {
-      padding-top: 42px;
-    }
-
-    .contacts__form {
-      display: flex;
-      align-items: baseline;
-      flex-wrap: wrap;
-    }
-
-    .contacts__label {
-      max-width: 323px;
-      margin-right: 0;
-      margin-bottom: 12px;
-    }
-
-    .contacts__label-input {
-      max-width: 323px;
-    }
-
-    .contacts__button-custom {
-      max-width: 318px;
-      padding: 11px 28px;
-    }
+  .contacts__form {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
   }
 
-  @media (max-width: 767px) and (min-width: 321px) {
-    .contacts__label {
-      margin-bottom: 20px;
-    }
+  .contacts__label {
+    max-width: 323px;
+    margin-right: 0;
+    margin-bottom: 12px;
   }
 
-  @media (max-width: 768px) {
-    .contacts__button-custom {
-      font-size: 14px;
-    }
+  .contacts__label-input {
+    max-width: 323px;
   }
 
-  @media (max-width: 440px) {
-    .contacts__button-custom {
-      max-width: 128px;
-      height: 40px;
-      font-weight: 700;
-      font-size: 12px;
-      line-height: 16px;
-    }
+  .contacts__button-custom {
+    max-width: 318px;
+    padding: 11px 28px;
+  }
+}
 
-    .contacts__button-custom-span {
-      display: none;
-    }
+@media (max-width: 767px) and (min-width: 321px) {
+  .contacts__label {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts__button-custom {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 440px) {
+  .contacts__button-custom {
+    max-width: 128px;
+    height: 40px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
   }
 
-  @media (max-width: 380px) {
-    .contacts__button-custom {
-      max-width: 180px;
-      font-size: 12px;
-      line-height: 12px;
-    }
+  .contacts__button-custom-span {
+    display: none;
+  }
+}
+
+@media (max-width: 380px) {
+  .contacts__button-custom {
+    max-width: 180px;
+    font-size: 12px;
+    line-height: 12px;
+  }
+}
+
+@media (max-width: 320px) {
+  .contacts-top {
+    padding-top: 30px;
+    padding-bottom: 0;
+    border-top: none;
+    border-bottom: none;
   }
 
-  @media (max-width: 320px) {
-    .contacts-top {
-      padding-top: 30px;
-      padding-bottom: 0;
-      border-top: none;
-      border-bottom: none;
-    }
+  .container-contacts {
+    border-top: none;
+    border-bottom: none;
+  }
 
-    .container-contacts {
-      border-top: none;
-      border-bottom: none;
-    }
+  .contacts__place-name-custom {
+    font-size: 18px;
+    line-height: 25px;
+  }
 
-    .contacts__place-name-custom {
-      font-size: 18px;
-      line-height: 25px;
-    }
+  .contacts__place-address-custom {
+    font-size: 14px;
+    line-height: 19px;
+  }
 
-    .contacts__place-address-custom {
-      font-size: 14px;
-      line-height: 19px;
-    }
+  .contacts__form {
+    margin-bottom: 15px;
+  }
 
-    .contacts__form {
-      margin-bottom: 15px;
-    }
+  .contacts__label-input::-webkit-input-placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+  }
 
-    .contacts__label-input::-webkit-input-placeholder {
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 32px;
-    }
+  .contacts__place {
+    margin-bottom: 23px;
+  }
 
-    .contacts__place {
-      margin-bottom: 23px;
-    }
+  .contacts__label {
+    margin-bottom: 20px;
+  }
 
-    .contacts__label {
-      margin-bottom: 20px;
-    }
+  .contacts__label-input {
+    height: 40px;
+    font-size: 16px;
+    line-height: 32px;
+  }
 
-    .contacts__label-input {
-      height: 40px;
-      font-size: 16px;
-      line-height: 32px;
-    }
+  .contacts__social-title {
+    margin-bottom: 7px;
+  }
 
-    .contacts__social-title {
-      margin-bottom: 7px;
-    }
+  .contacts__social-title-custom {
+    font-size: 18px;
+    line-height: 32px;
+  }
 
-    .contacts__social-title-custom {
-      font-size: 18px;
-      line-height: 32px;
-    }
+  .wattsup {
+    width: 50px;
+    height: 50px;
+  }
 
-    .wattsup {
-      width: 50px;
-      height: 50px;
-    }
+  .telegram {
+    width: 50px;
+    height: 50px;
+  }
 
-    .telegram {
-      width: 50px;
-      height: 50px;
-    }
-
-    .contacts__map {
-      min-height: 335px;
-    }
+  .contacts__map {
+    min-height: 335px;
   }
 }
 
@@ -426,9 +434,4 @@
     background-color: var(--paggination-disable);
   }
 
-  .contacts__button-custom:hover:not(:active) {
-    color: var(--header-white);
-    background-color: var(--dark-violet);
-    transition: background-color .3s ease-in-out;
-  }
 }

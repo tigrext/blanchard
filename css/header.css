@@ -31,8 +31,7 @@
 .header-nav {
   display: flex;
   justify-content: space-between;
-  width: 62.3%;
-  margin-right: 11%;
+  width: 100%;
 }
 
 .header-list__item-link {
@@ -178,12 +177,8 @@
     margin-right: 0;
   }
 
-  .header-nav {
-    width: 65%;
-  }
-
   .header-list {
-    width: 90%;
+    width: 80%;
   }
 }
 
