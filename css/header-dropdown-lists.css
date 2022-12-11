@@ -355,8 +355,12 @@
 }
 
 @media (max-width: 1200px) {
-  .header-container-down__list {
-    width: 34%;
+  .header-container-down__dropdown-4 {
+    left: -15px;
+  }
+
+  .header-container-down__dropdown-5 {
+    left: -140px;
   }
 
   .search__form-down {
