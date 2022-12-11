@@ -1,0 +1,15 @@
+:root {
+  --font-black: #333333;
+  --header-black: #000000;
+  --header-white: #FFFFFF;
+  --burger-violet: #C283F3;
+  --burger-violet-active: #7943A4;
+  --dark-violet: #9D5CD0;
+  --border: #D1A9F0;
+  --dark-grey: #1a1a1a;
+  --border-grey: #999999;
+  --paggination-grey: #666666;
+  --paggination-disable: #ECECEC;
+  --strelka-disable: #CACACA;
+  --invalid: #D11616;
+}

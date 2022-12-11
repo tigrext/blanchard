@@ -1,0 +1,221 @@
+.hamburger {
+  overflow: visible;
+  margin: 0;
+  border: 0;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.hamburger:focus-visible:not(:hover):not(:active) {
+  outline: 2px solid var(--burger-violet);
+  outline-offset: 7px;
+}
+
+.hamburger:active .hamburger-inner,
+.hamburger:active .hamburger-inner::before,
+.hamburger:active .hamburger-inner::after {
+  background-color: var(--burger-violet-active);
+}
+
+.hamburger.is--active:active .hamburger-inner,
+.hamburger.is--active:active .hamburger-inner::before,
+.hamburger.is--active:active .hamburger-inner::after {
+  background-color: var(--burger-violet-active);
+}
+
+.hamburger.is--active .hamburger-inner,
+.hamburger.is--active .hamburger-inner::before,
+.hamburger.is--active .hamburger-inner::after {
+  background-color: var(--header-white);
+}
+
+.burger-menu {
+  margin-bottom: 60px;
+  margin-left: -2px;
+}
+
+.hamburger-box {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 24px;
+  outline: none;
+}
+
+.hamburger-inner {
+  top: 50%;
+  display: block;
+  margin-top: -2px;
+}
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+  position: absolute;
+  width: 36px;
+  height: 3px;
+  border-radius: 4px;
+  background-color: var(--header-white);
+  transition-property: transform .15s ease;
+}
+
+.hamburger-inner::before,
+.hamburger-inner::after {
+  content: "";
+  display: block;
+}
+
+.hamburger-inner::before {
+  top: -10px;
+  width: 28px;
+}
+
+.hamburger-inner::after {
+  bottom: -10px;
+  width: 24px;
+}
+
+.hamburger--elastic .hamburger-inner {
+  top: 2px;
+  transition: transform .3s ease;
+}
+
+.hamburger--elastic .hamburger-inner::before {
+  top: 10px;
+}
+
+.hamburger--elastic .hamburger-inner::after {
+  top: 20px;
+}
+
+.hamburger--elastic.is--active .hamburger-inner {
+  width: 37px;
+  transform: translate3d(0, 10px, 0) rotate(135deg);
+}
+
+.hamburger--elastic.is--active .hamburger-inner::before {
+  width: 37px;
+  opacity: 0;
+  transition-delay: 0s;
+}
+
+.hamburger--elastic.is--active .hamburger-inner::after {
+  width: 37px;
+  transform: translate3d(0, -20px, 0) rotate(-270deg);
+}
+
+@media (max-width: 1024px) {
+  .stop-scroll {
+    overflow: hidden;
+  }
+
+  .hamburger--elastic .hamburger-inner {
+    top: 1px;
+  }
+
+  .hamburger--elastic .hamburger-inner::before {
+    top: 11px;
+  }
+
+  .hamburger--elastic .hamburger-inner::after {
+    top: 23px;
+  }
+
+  .hamburger--elastic.is--active .hamburger-inner::after {
+    top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hamburger-inner,
+  .hamburger-inner::before,
+  .hamburger-inner::after {
+    height: 3px;
+  }
+
+  .hamburger--elastic .hamburger-inner::before {
+    top: 12px;
+  }
+
+  .hamburger--elastic .hamburger-inner::after {
+    top: 24px;
+  }
+}
+
+@media (max-width: 440px) {
+  .hamburger-box {
+    width: 20px;
+  }
+
+  .hamburger:focus-visible:not(:hover):not(:active) {
+    outline-offset: 3px;
+  }
+
+  .hamburger-inner,
+  .hamburger-inner::before,
+  .hamburger-inner::after {
+    width: 25px;
+    height: 2px;
+  }
+
+  .hamburger--elastic .hamburger-inner {
+    top: 4px;
+  }
+
+  .hamburger-inner::before {
+    width: 16px;
+  }
+
+  .hamburger--elastic .hamburger-inner::before {
+    top: 8px;
+  }
+
+  .hamburger-inner::after {
+    width: 10px;
+  }
+
+  .hamburger--elastic .hamburger-inner::after {
+    top: 16px;
+  }
+
+  .burger-menu {
+    margin-bottom: 40px;
+  }
+
+  .hamburger--elastic.is--active .hamburger-inner {
+    width: 20px;
+  }
+
+  .hamburger--elastic.is--active .hamburger-inner::before {
+    width: 20px;
+  }
+
+  .hamburger--elastic.is--active .hamburger-inner::after {
+    top: 20px;
+    width: 20px;
+  }
+}
+
+@media (max-width: 320px) {
+  .burger-menu {
+    margin-bottom: 20px;
+  }
+}
+
+@media (any-hover: hover) {
+  .hamburger.is--active:hover:not(:active) .hamburger-inner,
+  .hamburger.is--active:hover:not(:active) .hamburger-inner::before,
+  .hamburger.is--active:hover:not(:active) .hamburger-inner::after {
+    background-color: var(--burger-violet);
+  }
+
+  .hamburger:hover:not(:active) .hamburger-inner,
+  .hamburger:hover:not(:active) .hamburger-inner::before,
+  .hamburger:hover:not(:active) .hamburger-inner::after {
+    background-color: var(--burger-violet);
+  }
+
+}
