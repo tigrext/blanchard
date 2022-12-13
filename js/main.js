@@ -575,40 +575,21 @@ var im = new Inputmask("+7 (999)-999-99-99");
 im.mask(phoneElement);
 
 // Валидация формы
-const validation = new window.JustValidate('.js-custom-form', {
-  errorFieldCssClass: 'is-invalid',
-  errorFieldStyle: {
-    border: '1px solid #D11616',
-  },
-  errorLabelCssClass: 'is-label-invalid',
-  errorLabelStyle: {
-    color: '#D11616',
-  },
-  focusInvalidField: true,
-  lockForm: true,
-
-  submitHandler: function(thisForm) {
-    let formData = new FormData(thisForm);
-
-    let xhr = new XMLHttpRequest();
-
-    xhr.onreadystatechange = function () {
-      if (xhr.readyState === 4) {
-        if (xhr.status === 200) {
-          console.log('Отправлено');
-        }
-      }
-    }
-
-    xhr.open('POST', 'mail.php', true);
-    xhr.send(formData);
-
-    thisForm.reset();
-  }
+const validation = new window.JustValidate('#custom-form', {
+errorFieldCssClass: 'is-invalid',
+errorFieldStyle: {
+  border: '1px solid #D11616',
+},
+errorLabelCssClass: 'is-label-invalid',
+errorLabelStyle: {
+  color: '#D11616',
+},
+focusInvalidField: true,
+lockForm: true,
 });
 
 validation
-.addField('.input-name', [
+.addField('#name', [
   {
     rule: 'minLength',
     value: 3,
@@ -624,16 +605,39 @@ validation
     errorMessage: 'Как вас зовут?'
   }
 ])
-.addField('.input-tel', [
+
+.addField('#tel', [
   {
     validator: () => {
       const phone = phoneElement.inputmask.unmaskedvalue();
       const result = Number(phone) && phone.length === 10;
       return result === 0 ? false : result;
     },
-    errorMessage: 'Укажите ваш телефон'
+    errorMessage: 'Укажите ваш телефон',
+    rule: 'required'
+  },
+]).onSuccess((event) => {
+  console.log('Validation passes and form submitted', event);
+
+  let formData = new FormData(event.target);
+
+  console.log(...formData);
+
+  let xhr = new XMLHttpRequest();
+
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState === 4) {
+      if (xhr.status === 200) {
+        console.log('Отправлено');
+      }
+    }
   }
-]);
+
+  xhr.open('POST', 'mail.php', true);
+  xhr.send(formData);
+
+  event.target.reset();
+});
 
 // Карта
 ymaps.ready(init);
