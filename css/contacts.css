@@ -104,6 +104,12 @@
   color: var(--dark-violet);
 }
 
+.contacts__button-custom:hover {
+  color: var(--header-white);
+  background-color: var(--dark-violet);
+  transition: background-color .3s ease-in-out;
+}
+
 .contacts__button-custom:focus-visible {
   color: var(--header-white);
   outline: none;
@@ -433,5 +439,4 @@
   .contacts__label-input:hover:not(:active) {
     background-color: var(--paggination-disable);
   }
-
 }
